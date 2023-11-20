@@ -43,7 +43,7 @@ export const Board = (props: BoardProps) => {
       state: props.getIsWeightNodePicked()
         ? SquareState.weightNode
         : SquareState.obstacle,
-      weight: props.getIsWeightNodePicked() ? props.weightedNodeWeight : 99,
+      weight: 99,
     };
 
     props.setBoard([...newBoard]);
@@ -121,7 +121,7 @@ export const Board = (props: BoardProps) => {
       state: props.getIsWeightNodePicked()
         ? SquareState.weightNode
         : SquareState.obstacle,
-      weight: props.getIsWeightNodePicked() ? props.weightedNodeWeight : 99,
+      weight: 99,
     };
 
     props.setBoard([...newBoard]);
