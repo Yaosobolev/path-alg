@@ -26,12 +26,12 @@ export async function generateRandomMaze(
           state: isWeightNodePicked
             ? SquareState.weightNode
             : SquareState.obstacle,
-          weight: isWeightNodePicked ? props.weightedNodeWeight : 99,
+          weight: 99,
         };
         props.setBoard([...newBoard]);
       }
 
-      await new Promise((resolve) => setTimeout(resolve, props.delay));
+      await new Promise((resolve) => setTimeout(resolve));
     }
   }
 
